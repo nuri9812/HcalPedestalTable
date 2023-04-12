@@ -12,7 +12,7 @@ start=`date +%s.%N`
 
 #root -b -q $CMSSW_BASE'/src/Pedestal/HCALPFG/HcalPedestalTuning/HcalPedestalTable/HCALPedestalTableMaker.C++("'$CMSSW_BASE'/src/Pedestal/nTuple.root")' #update your path
 
-python PedestalTableMakerHcalNano-pyRoot.py
+python PedestalTableMakerHcalNano-pyRoot.py $1
 echo "initial done"
 python3 interpolation.py nTuple_PedestalTable.txt
 
