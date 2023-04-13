@@ -1,5 +1,5 @@
 # HcalPedestalTable
-First, move pedestal to $CMSSWBASE/src
+First, move pedestal to $CMSSW_BASE/src
 
 
 To produce a pedestal Mean/Width, interpolate missing channels, and Figures
