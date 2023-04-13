@@ -1,11 +1,12 @@
 # HcalPedestalTable
-##Setting
+## Setting
 ```
 git clone https://github.com/nuri9812/HcalPedestalTable.git
 mv HcalPedestalTable/Pedestal $CMSSW_BASE/src
 cd $CMSSW_BASE/src/Pedestal
 ```
 
+## command for run codes
 To produce a pedestal Mean/Width, interpolate missing channels, and Figures
 you should update your path line in "run.sh". and then
 ```
