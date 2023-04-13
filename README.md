@@ -1,4 +1,9 @@
 # HcalPedestalTable
+```
+mv Pedestal $CMSBASE/src
+```
+
+
 To produce a pedestal Mean/Width, interpolate missing channels, and Figures
 you should update your path line in "run.sh". and then
 ```
