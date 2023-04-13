@@ -30,6 +30,7 @@ To make figures for a sanity check,
 mkdir Fig
 root -b -q 'HCALPedestalAnalysis.C++("<path to PedestalTable>", <bins1>,<min1>,<max1>,<bins2>,<min2>,<max2>)'
 ```
+HCALPedestalAnalysis produces 1D and 2D histogram of pedestal mean/width from pedestal table.
 bins1, min1, max1 is number of bins, min, max for pedestal mean.
 bins2, min2, max2 is number of bins, min, max for pedestal width.
 
