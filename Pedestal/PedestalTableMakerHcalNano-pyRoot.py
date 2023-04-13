@@ -364,7 +364,7 @@ cap0_array = np.concatenate(tuple(cap0_HF), axis = 0)
 cap1_array = np.concatenate(tuple(cap1_HF), axis = 0)
 #cap2_array = np.concatenate(tuple(cap2_HF), axis = 0)
 cap3_array = np.concatenate(tuple(cap3_HF), axis = 0)
-#cap2_array = 0*cap0_array
+cap2_array = 0*cap0_array
 cap2_array = np.mean((cap0_array,cap1_array,cap3_array),axis = 0)
 
 cap0 = np.mean(cap0_array, axis = 0)
@@ -443,7 +443,7 @@ header_str="U FC  << this is the unit \n              eta             phi       
 
 fmt_list=['%17s','%16s','%16s','%16s','%9s','%9s','%9s','%9s','%9s','%9s','%9s','%9s','%11s']
 
-np.savetxt("test.txt",table_all,fmt=fmt_list,header=header_str,delimiter='')
+np.savetxt("PedestalTable.txt",table_all,fmt=fmt_list,header=header_str,delimiter='')
 
 
 # In[ ]:
