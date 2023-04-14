@@ -1,6 +1,7 @@
 # HcalPedestalTable
 ## Setting
 ```
+cmsenv
 git clone https://github.com/nuri9812/HcalPedestalTable.git
 mv HcalPedestalTable/Pedestal $CMSSW_BASE/src
 cd $CMSSW_BASE/src/Pedestal
