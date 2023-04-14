@@ -12,7 +12,7 @@ cd $CMSSW_BASE/src/Pedestal
 To produce a pedestal Mean/Width, interpolate missing channels, and Figures
 you should update your path line in "run.sh". and then
 ```
-run.sh <path to HcalNano>
+./run.sh <path to HcalNano>
 ```
 
 
