@@ -26,12 +26,12 @@ cat PedestalTable_interploated.txt | grep -e HF -e HO >> PedestalTable_interploa
 
 mkdir Fig
 
-root -b -q $CMSSW_BASE'/src/Pedestal/HCALPFG/HcalPedestalTuning/HcalPedestalTable/HCALPedestalAnalysis.C++("'$CMSSW_BASE'/src/Pedestal/PedestalTable_interploated_HBHE.txt",250,0,50,50,0,50 )' #update your path, [Max, Min, bins] for Mean plot, [Max, Min, bins] for width plot
+root -b -q $CMSSW_BASE'/src/Pedestal/HCALPedestalAnalysis.C++("'$CMSSW_BASE'/src/Pedestal/PedestalTable_interploated_HBHE.txt",250,0,50,50,0,50 )' #update your path, [Max, Min, bins] for Mean plot, [Max, Min, bins] for width plot
 
 mv Fig Fig_HBHE
 mkdir Fig
 
-root -b -q $CMSSW_BASE'/src/Pedestal/HCALPFG/HcalPedestalTuning/HcalPedestalTable/HCALPedestalAnalysis.C++("'$CMSSW_BASE'/src/Pedestal/PedestalTable_interploated_HFHO.txt",30,0,70,15,0,50)' #update your path
+root -b -q $CMSSW_BASE'/src/Pedestal/HCALPedestalAnalysis.C++("'$CMSSW_BASE'/src/Pedestal/PedestalTable_interploated_HFHO.txt",30,0,70,15,0,50)' #update your path
 mv Fig Fig_HFHO
 
 echo "plots for sanity check is produced"
