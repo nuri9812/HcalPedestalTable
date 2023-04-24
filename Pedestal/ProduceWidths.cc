@@ -65,7 +65,7 @@ void ProduceWidths() {
 			cov[2][2] = pow(atof(items[10].c_str()),2);
 			cov[3][3] = pow(atof(items[11].c_str()),2);
                         DetId = items[12].c_str();
-                        fprintf(fto, "%17d%16d%16d%16s %8.3f%8.3f%8.3f%8.3f %8.3f%8.3f%8.3f%8.3f %8.3f%8.3f%8.3f%8.3f %8.3f%8.3f%8.3f%8.3f %10s\n", ieta, iphi, depth, SubDet, cov[0][0], cov[0][1], cov[0][2], cov[0][3], cov[1][0], cov[1][1], cov[1][2], cov[1][3], cov[2][0], cov[2][1], cov[2][2], cov[2][3], cov[3][0], cov[3][1], cov[3][2], cov[3][3], DetId);
+                        fprintf(fto, "%17d%16d%16d%16s %12.3f%12.3f%12.3f%12.3f %12.3f%12.3f%12.3f%12.3f %12.3f%12.3f%12.3f%12.3f %12.3f%12.3f%12.3f%12.3f %10s\n", ieta, iphi, depth, SubDet, cov[0][0], cov[0][1], cov[0][2], cov[0][3], cov[1][0], cov[1][1], cov[1][2], cov[1][3], cov[2][0], cov[2][1], cov[2][2], cov[2][3], cov[3][0], cov[3][1], cov[3][2], cov[3][3], DetId);
                         //}
 		}//not empty lines
 	        }	
